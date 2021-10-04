@@ -1,0 +1,1328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C9513926FC7D5C002AC476 /* PAYCityField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512226FC7D5B002AC476 /* PAYCityField.swift */; };
+		62C9513A26FC7D5C002AC476 /* PAYCardHolderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512426FC7D5B002AC476 /* PAYCardHolderField.swift */; };
+		62C9513B26FC7D5C002AC476 /* PAYExpiredDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512626FC7D5B002AC476 /* PAYExpiredDateField.swift */; };
+		62C9513C26FC7D5C002AC476 /* PAYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512826FC7D5C002AC476 /* PAYTextField.swift */; };
+		62C9513D26FC7D5C002AC476 /* PAYNameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512A26FC7D5C002AC476 /* PAYNameField.swift */; };
+		62C9513E26FC7D5C002AC476 /* PAYCardNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512C26FC7D5C002AC476 /* PAYCardNumberField.swift */; };
+		62C9513F26FC7D5C002AC476 /* PAYEmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9512E26FC7D5C002AC476 /* PAYEmailField.swift */; };
+		62C9514026FC7D5C002AC476 /* PAYZipField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9513026FC7D5C002AC476 /* PAYZipField.swift */; };
+		62C9514126FC7D5C002AC476 /* PAYAddressField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9513226FC7D5C002AC476 /* PAYAddressField.swift */; };
+		62C9514226FC7D5C002AC476 /* PAYCountryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9513426FC7D5C002AC476 /* PAYCountryField.swift */; };
+		62C9514326FC7D5C002AC476 /* PAYCVVField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9513626FC7D5C002AC476 /* PAYCVVField.swift */; };
+		62C9514426FC7D5C002AC476 /* PAYPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9513826FC7D5C002AC476 /* PAYPhoneField.swift */; };
+		62CC075526FDEE95007760E9 /* dankort_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CC075326FDEE95007760E9 /* dankort_card_icon.png */; };
+		62CC075626FDEE95007760E9 /* jcb_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CC075426FDEE95007760E9 /* jcb_card_icon.png */; };
+		62FCB4BF266CC4ED00DFF3BA /* Genome.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FCB4B1266CC4ED00DFF3BA /* Genome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62FCB572266CC6C900DFF3BA /* PAYPaymentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4CD266CC6C800DFF3BA /* PAYPaymentConfiguration.swift */; };
+		62FCB573266CC6C900DFF3BA /* PAYCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4CF266CC6C800DFF3BA /* PAYCustomer.swift */; };
+		62FCB574266CC6C900DFF3BA /* PAYMerchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4D1266CC6C800DFF3BA /* PAYMerchant.swift */; };
+		62FCB575266CC6C900DFF3BA /* PAYCardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4D3266CC6C800DFF3BA /* PAYCardInfo.swift */; };
+		62FCB576266CC6C900DFF3BA /* PAYOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4D5266CC6C800DFF3BA /* PAYOrder.swift */; };
+		62FCB577266CC6C900DFF3BA /* PAYAuth3DConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4D7266CC6C800DFF3BA /* PAYAuth3DConfirm.swift */; };
+		62FCB578266CC6C900DFF3BA /* PAYTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4D8266CC6C800DFF3BA /* PAYTransactionRequest.swift */; };
+		62FCB579266CC6C900DFF3BA /* PAYCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4DA266CC6C800DFF3BA /* PAYCard.swift */; };
+		62FCB57A266CC6C900DFF3BA /* PAYCheckboxConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4DC266CC6C800DFF3BA /* PAYCheckboxConfiguration.swift */; };
+		62FCB57B266CC6C900DFF3BA /* PAYPaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4DF266CC6C800DFF3BA /* PAYPaymentInfo.swift */; };
+		62FCB57C266CC6C900DFF3BA /* PAYInitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E1266CC6C800DFF3BA /* PAYInitInfo.swift */; };
+		62FCB57D266CC6C900DFF3BA /* PAYCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E3266CC6C800DFF3BA /* PAYCallback.swift */; };
+		62FCB57E266CC6C900DFF3BA /* PAYSignatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E5266CC6C800DFF3BA /* PAYSignatureInfo.swift */; };
+		62FCB57F266CC6C900DFF3BA /* PAYTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E7266CC6C800DFF3BA /* PAYTransactionResponse.swift */; };
+		62FCB580266CC6C900DFF3BA /* PAYTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E9266CC6C800DFF3BA /* PAYTheme.swift */; };
+		62FCB581266CC6C900DFF3BA /* PAYPAYAvailableFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4EB266CC6C800DFF3BA /* PAYPAYAvailableFields.swift */; };
+		62FCB582266CC6C900DFF3BA /* PAYFieldStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4EE266CC6C800DFF3BA /* PAYFieldStateObserver.swift */; };
+		62FCB583266CC6C900DFF3BA /* PAYKeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F0266CC6C800DFF3BA /* PAYKeyboardService.swift */; };
+		62FCB584266CC6C900DFF3BA /* PAYCardTypeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F2266CC6C800DFF3BA /* PAYCardTypeDetector.swift */; };
+		62FCB585266CC6C900DFF3BA /* PAYNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F4266CC6C800DFF3BA /* PAYNetworkService.swift */; };
+		62FCB586266CC6C900DFF3BA /* PAYNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F5266CC6C800DFF3BA /* PAYNetworkAPI.swift */; };
+		62FCB587266CC6C900DFF3BA /* PAYL10nService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F7266CC6C800DFF3BA /* PAYL10nService.swift */; };
+		62FCB588266CC6C900DFF3BA /* PAYIPAddressProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4F9266CC6C800DFF3BA /* PAYIPAddressProvider.swift */; };
+		62FCB589266CC6C900DFF3BA /* PAYBundleLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4FB266CC6C800DFF3BA /* PAYBundleLocator.swift */; };
+		62FCB58A266CC6C900DFF3BA /* PAYPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4FE266CC6C800DFF3BA /* PAYPaymentViewController.swift */; };
+		62FCB58B266CC6C900DFF3BA /* PAYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB500266CC6C800DFF3BA /* PAYWebViewController.swift */; };
+		62FCB58C266CC6C900DFF3BA /* noname_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB504266CC6C800DFF3BA /* noname_card_icon.png */; };
+		62FCB58D266CC6C900DFF3BA /* amex_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB505266CC6C800DFF3BA /* amex_card_icon.png */; };
+		62FCB58E266CC6C900DFF3BA /* diners_club_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB506266CC6C800DFF3BA /* diners_club_card_icon.png */; };
+		62FCB58F266CC6C900DFF3BA /* noname_card_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB507266CC6C800DFF3BA /* noname_card_icon@3x.png */; };
+		62FCB590266CC6C900DFF3BA /* maestro_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB508266CC6C800DFF3BA /* maestro_card_icon.png */; };
+		62FCB591266CC6C900DFF3BA /* mastercard_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB509266CC6C800DFF3BA /* mastercard_card_icon.png */; };
+		62FCB592266CC6C900DFF3BA /* noname_card_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB50A266CC6C800DFF3BA /* noname_card_icon@2x.png */; };
+		62FCB593266CC6C900DFF3BA /* discover_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB50B266CC6C800DFF3BA /* discover_card_icon.png */; };
+		62FCB594266CC6C900DFF3BA /* visa_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB50C266CC6C800DFF3BA /* visa_card_icon.png */; };
+		62FCB595266CC6C900DFF3BA /* white_checkmark_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB50E266CC6C800DFF3BA /* white_checkmark_icon.png */; };
+		62FCB596266CC6C900DFF3BA /* white_checkmark_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB50F266CC6C800DFF3BA /* white_checkmark_icon@2x.png */; };
+		62FCB597266CC6C900DFF3BA /* white_checkmark_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB510266CC6C800DFF3BA /* white_checkmark_icon@3x.png */; };
+		62FCB598266CC6C900DFF3BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB512266CC6C800DFF3BA /* Localizable.strings */; };
+		62FCB599266CC6C900DFF3BA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB525266CC6C800DFF3BA /* UIViewController+Extensions.swift */; };
+		62FCB59A266CC6C900DFF3BA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB526266CC6C800DFF3BA /* UIView+Extensions.swift */; };
+		62FCB59B266CC6C900DFF3BA /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB527266CC6C800DFF3BA /* UIFont+Extensions.swift */; };
+		62FCB59C266CC6C900DFF3BA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB528266CC6C800DFF3BA /* UIColor+Extensions.swift */; };
+		62FCB59D266CC6C900DFF3BA /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB529266CC6C800DFF3BA /* UIImage+Extensions.swift */; };
+		62FCB59E266CC6C900DFF3BA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB52B266CC6C800DFF3BA /* Array+Extensions.swift */; };
+		62FCB59F266CC6C900DFF3BA /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB52C266CC6C800DFF3BA /* Int+Extensions.swift */; };
+		62FCB5A0266CC6C900DFF3BA /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB52D266CC6C800DFF3BA /* NumberFormatter+Extensions.swift */; };
+		62FCB5A1266CC6C900DFF3BA /* CharacterSet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB52E266CC6C800DFF3BA /* CharacterSet+Extensions.swift */; };
+		62FCB5A2266CC6C900DFF3BA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB52F266CC6C800DFF3BA /* String+Extension.swift */; };
+		62FCB5A3266CC6C900DFF3BA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB530266CC6C800DFF3BA /* Data+Extension.swift */; };
+		62FCB5A4266CC6C900DFF3BA /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB531266CC6C800DFF3BA /* Dictionary+Extensions.swift */; };
+		62FCB5A5266CC6C900DFF3BA /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB532266CC6C800DFF3BA /* DateFormatter.swift */; };
+		62FCB5A6266CC6C900DFF3BA /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB533266CC6C800DFF3BA /* Float+Extensions.swift */; };
+		62FCB5A7266CC6C900DFF3BA /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB535266CC6C800DFF3BA /* Encodable+Extensions.swift */; };
+		62FCB5A8266CC6C900DFF3BA /* PAYCheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB539266CC6C800DFF3BA /* PAYCheckboxView.xib */; };
+		62FCB5A9266CC6C900DFF3BA /* PAYCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB53A266CC6C800DFF3BA /* PAYCheckboxView.swift */; };
+		62FCB5AA266CC6C900DFF3BA /* PAYDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB53C266CC6C800DFF3BA /* PAYDatePickerView.swift */; };
+		62FCB5AB266CC6C900DFF3BA /* PAYDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB53D266CC6C800DFF3BA /* PAYDatePickerView.xib */; };
+		62FCB5AC266CC6C900DFF3BA /* PAYLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB53F266CC6C800DFF3BA /* PAYLockView.swift */; };
+		62FCB5AD266CC6C900DFF3BA /* PAYCustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB541266CC6C800DFF3BA /* PAYCustomTextView.swift */; };
+		62FCB5AE266CC6C900DFF3BA /* PAYPaymentRootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB543266CC6C800DFF3BA /* PAYPaymentRootView.xib */; };
+		62FCB5AF266CC6C900DFF3BA /* PAYPaymentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB544266CC6C800DFF3BA /* PAYPaymentRootView.swift */; };
+		62FCB5B0266CC6C900DFF3BA /* PAYInputCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB546266CC6C800DFF3BA /* PAYInputCardView.swift */; };
+		62FCB5B1266CC6C900DFF3BA /* PAYInputCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB547266CC6C800DFF3BA /* PAYInputCardView.xib */; };
+		62FCB5B2266CC6C900DFF3BA /* PAYConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB549266CC6C800DFF3BA /* PAYConditionsView.xib */; };
+		62FCB5B3266CC6C900DFF3BA /* PAYConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB54A266CC6C800DFF3BA /* PAYConditionsView.swift */; };
+		62FCB5B4266CC6C900DFF3BA /* PAYNibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB54C266CC6C800DFF3BA /* PAYNibLoadableView.swift */; };
+		62FCB5B5266CC6CA00DFF3BA /* PAYBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB54E266CC6C800DFF3BA /* PAYBaseView.swift */; };
+		62FCB5B6266CC6CA00DFF3BA /* PAYBillingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FCB550266CC6C800DFF3BA /* PAYBillingView.xib */; };
+		62FCB5B7266CC6CA00DFF3BA /* PAYBillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB551266CC6C800DFF3BA /* PAYBillingView.swift */; };
+		62FCB5B8266CC6CA00DFF3BA /* PAYL10nKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB554266CC6C800DFF3BA /* PAYL10nKey.swift */; };
+		62FCB5B9266CC6CA00DFF3BA /* PAYCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB555266CC6C800DFF3BA /* PAYCardType.swift */; };
+		62FCB5BA266CC6CA00DFF3BA /* PAYHTTPMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB556266CC6C800DFF3BA /* PAYHTTPMethodType.swift */; };
+		62FCB5BB266CC6CA00DFF3BA /* PAYTransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB558266CC6C800DFF3BA /* PAYTransactionType.swift */; };
+		62FCB5BC266CC6CA00DFF3BA /* PAYCOFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB559266CC6C800DFF3BA /* PAYCOFType.swift */; };
+		62FCB5C5266CC6CA00DFF3BA /* PAYParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB56D266CC6C900DFF3BA /* PAYParserError.swift */; };
+		62FCB5C6266CC6CA00DFF3BA /* PAYNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB56F266CC6C900DFF3BA /* PAYNetworkError.swift */; };
+		62FCB5C7266CC6CA00DFF3BA /* PAYPaymentControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB571266CC6C900DFF3BA /* PAYPaymentControllerError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62C9512226FC7D5B002AC476 /* PAYCityField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCityField.swift; sourceTree = "<group>"; };
+		62C9512426FC7D5B002AC476 /* PAYCardHolderField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardHolderField.swift; sourceTree = "<group>"; };
+		62C9512626FC7D5B002AC476 /* PAYExpiredDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYExpiredDateField.swift; sourceTree = "<group>"; };
+		62C9512826FC7D5C002AC476 /* PAYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTextField.swift; sourceTree = "<group>"; };
+		62C9512A26FC7D5C002AC476 /* PAYNameField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNameField.swift; sourceTree = "<group>"; };
+		62C9512C26FC7D5C002AC476 /* PAYCardNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardNumberField.swift; sourceTree = "<group>"; };
+		62C9512E26FC7D5C002AC476 /* PAYEmailField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYEmailField.swift; sourceTree = "<group>"; };
+		62C9513026FC7D5C002AC476 /* PAYZipField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYZipField.swift; sourceTree = "<group>"; };
+		62C9513226FC7D5C002AC476 /* PAYAddressField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYAddressField.swift; sourceTree = "<group>"; };
+		62C9513426FC7D5C002AC476 /* PAYCountryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCountryField.swift; sourceTree = "<group>"; };
+		62C9513626FC7D5C002AC476 /* PAYCVVField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCVVField.swift; sourceTree = "<group>"; };
+		62C9513826FC7D5C002AC476 /* PAYPhoneField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPhoneField.swift; sourceTree = "<group>"; };
+		62CC075326FDEE95007760E9 /* dankort_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dankort_card_icon.png; sourceTree = "<group>"; };
+		62CC075426FDEE95007760E9 /* jcb_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jcb_card_icon.png; sourceTree = "<group>"; };
+		62FCB4AE266CC4ED00DFF3BA /* GenomePaymentSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenomePaymentSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FCB4B1266CC4ED00DFF3BA /* Genome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Genome.h; sourceTree = "<group>"; };
+		62FCB4B2266CC4ED00DFF3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FCB4CD266CC6C800DFF3BA /* PAYPaymentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentConfiguration.swift; sourceTree = "<group>"; };
+		62FCB4CF266CC6C800DFF3BA /* PAYCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCustomer.swift; sourceTree = "<group>"; };
+		62FCB4D1266CC6C800DFF3BA /* PAYMerchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYMerchant.swift; sourceTree = "<group>"; };
+		62FCB4D3266CC6C800DFF3BA /* PAYCardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardInfo.swift; sourceTree = "<group>"; };
+		62FCB4D5266CC6C800DFF3BA /* PAYOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYOrder.swift; sourceTree = "<group>"; };
+		62FCB4D7266CC6C800DFF3BA /* PAYAuth3DConfirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYAuth3DConfirm.swift; sourceTree = "<group>"; };
+		62FCB4D8266CC6C800DFF3BA /* PAYTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionRequest.swift; sourceTree = "<group>"; };
+		62FCB4DA266CC6C800DFF3BA /* PAYCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCard.swift; sourceTree = "<group>"; };
+		62FCB4DC266CC6C800DFF3BA /* PAYCheckboxConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCheckboxConfiguration.swift; sourceTree = "<group>"; };
+		62FCB4DF266CC6C800DFF3BA /* PAYPaymentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentInfo.swift; sourceTree = "<group>"; };
+		62FCB4E1266CC6C800DFF3BA /* PAYInitInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYInitInfo.swift; sourceTree = "<group>"; };
+		62FCB4E3266CC6C800DFF3BA /* PAYCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCallback.swift; sourceTree = "<group>"; };
+		62FCB4E5266CC6C800DFF3BA /* PAYSignatureInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYSignatureInfo.swift; sourceTree = "<group>"; };
+		62FCB4E7266CC6C800DFF3BA /* PAYTransactionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionResponse.swift; sourceTree = "<group>"; };
+		62FCB4E9266CC6C800DFF3BA /* PAYTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTheme.swift; sourceTree = "<group>"; };
+		62FCB4EB266CC6C800DFF3BA /* PAYPAYAvailableFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPAYAvailableFields.swift; sourceTree = "<group>"; };
+		62FCB4EE266CC6C800DFF3BA /* PAYFieldStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYFieldStateObserver.swift; sourceTree = "<group>"; };
+		62FCB4F0266CC6C800DFF3BA /* PAYKeyboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYKeyboardService.swift; sourceTree = "<group>"; };
+		62FCB4F2266CC6C800DFF3BA /* PAYCardTypeDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardTypeDetector.swift; sourceTree = "<group>"; };
+		62FCB4F4266CC6C800DFF3BA /* PAYNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkService.swift; sourceTree = "<group>"; };
+		62FCB4F5266CC6C800DFF3BA /* PAYNetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkAPI.swift; sourceTree = "<group>"; };
+		62FCB4F7266CC6C800DFF3BA /* PAYL10nService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYL10nService.swift; sourceTree = "<group>"; };
+		62FCB4F9266CC6C800DFF3BA /* PAYIPAddressProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYIPAddressProvider.swift; sourceTree = "<group>"; };
+		62FCB4FB266CC6C800DFF3BA /* PAYBundleLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBundleLocator.swift; sourceTree = "<group>"; };
+		62FCB4FE266CC6C800DFF3BA /* PAYPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentViewController.swift; sourceTree = "<group>"; };
+		62FCB500266CC6C800DFF3BA /* PAYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYWebViewController.swift; sourceTree = "<group>"; };
+		62FCB504266CC6C800DFF3BA /* noname_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noname_card_icon.png; sourceTree = "<group>"; };
+		62FCB505266CC6C800DFF3BA /* amex_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amex_card_icon.png; sourceTree = "<group>"; };
+		62FCB506266CC6C800DFF3BA /* diners_club_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diners_club_card_icon.png; sourceTree = "<group>"; };
+		62FCB507266CC6C800DFF3BA /* noname_card_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noname_card_icon@3x.png"; sourceTree = "<group>"; };
+		62FCB508266CC6C800DFF3BA /* maestro_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maestro_card_icon.png; sourceTree = "<group>"; };
+		62FCB509266CC6C800DFF3BA /* mastercard_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard_card_icon.png; sourceTree = "<group>"; };
+		62FCB50A266CC6C800DFF3BA /* noname_card_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noname_card_icon@2x.png"; sourceTree = "<group>"; };
+		62FCB50B266CC6C800DFF3BA /* discover_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover_card_icon.png; sourceTree = "<group>"; };
+		62FCB50C266CC6C800DFF3BA /* visa_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa_card_icon.png; sourceTree = "<group>"; };
+		62FCB50E266CC6C800DFF3BA /* white_checkmark_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_checkmark_icon.png; sourceTree = "<group>"; };
+		62FCB50F266CC6C800DFF3BA /* white_checkmark_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_checkmark_icon@2x.png"; sourceTree = "<group>"; };
+		62FCB510266CC6C800DFF3BA /* white_checkmark_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_checkmark_icon@3x.png"; sourceTree = "<group>"; };
+		62FCB513266CC6C800DFF3BA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB514266CC6C800DFF3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB515266CC6C800DFF3BA /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB516266CC6C800DFF3BA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB517266CC6C800DFF3BA /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB518266CC6C800DFF3BA /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB519266CC6C800DFF3BA /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB51A266CC6C800DFF3BA /* en-IE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IE"; path = "en-IE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		62FCB51B266CC6C800DFF3BA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB51C266CC6C800DFF3BA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB51D266CC6C800DFF3BA /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB51E266CC6C800DFF3BA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB51F266CC6C800DFF3BA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB520266CC6C800DFF3BA /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB521266CC6C800DFF3BA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62FCB522266CC6C800DFF3BA /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		62FCB525266CC6C800DFF3BA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB526266CC6C800DFF3BA /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB527266CC6C800DFF3BA /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB528266CC6C800DFF3BA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB529266CC6C800DFF3BA /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB52B266CC6C800DFF3BA /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB52C266CC6C800DFF3BA /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB52D266CC6C800DFF3BA /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB52E266CC6C800DFF3BA /* CharacterSet+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB52F266CC6C800DFF3BA /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		62FCB530266CC6C800DFF3BA /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		62FCB531266CC6C800DFF3BA /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB532266CC6C800DFF3BA /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		62FCB533266CC6C800DFF3BA /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB535266CC6C800DFF3BA /* Encodable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		62FCB539266CC6C800DFF3BA /* PAYCheckboxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYCheckboxView.xib; sourceTree = "<group>"; };
+		62FCB53A266CC6C800DFF3BA /* PAYCheckboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCheckboxView.swift; sourceTree = "<group>"; };
+		62FCB53C266CC6C800DFF3BA /* PAYDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYDatePickerView.swift; sourceTree = "<group>"; };
+		62FCB53D266CC6C800DFF3BA /* PAYDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYDatePickerView.xib; sourceTree = "<group>"; };
+		62FCB53F266CC6C800DFF3BA /* PAYLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYLockView.swift; sourceTree = "<group>"; };
+		62FCB541266CC6C800DFF3BA /* PAYCustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCustomTextView.swift; sourceTree = "<group>"; };
+		62FCB543266CC6C800DFF3BA /* PAYPaymentRootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYPaymentRootView.xib; sourceTree = "<group>"; };
+		62FCB544266CC6C800DFF3BA /* PAYPaymentRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentRootView.swift; sourceTree = "<group>"; };
+		62FCB546266CC6C800DFF3BA /* PAYInputCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYInputCardView.swift; sourceTree = "<group>"; };
+		62FCB547266CC6C800DFF3BA /* PAYInputCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYInputCardView.xib; sourceTree = "<group>"; };
+		62FCB549266CC6C800DFF3BA /* PAYConditionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYConditionsView.xib; sourceTree = "<group>"; };
+		62FCB54A266CC6C800DFF3BA /* PAYConditionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYConditionsView.swift; sourceTree = "<group>"; };
+		62FCB54C266CC6C800DFF3BA /* PAYNibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNibLoadableView.swift; sourceTree = "<group>"; };
+		62FCB54E266CC6C800DFF3BA /* PAYBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBaseView.swift; sourceTree = "<group>"; };
+		62FCB550266CC6C800DFF3BA /* PAYBillingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYBillingView.xib; sourceTree = "<group>"; };
+		62FCB551266CC6C800DFF3BA /* PAYBillingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBillingView.swift; sourceTree = "<group>"; };
+		62FCB554266CC6C800DFF3BA /* PAYL10nKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYL10nKey.swift; sourceTree = "<group>"; };
+		62FCB555266CC6C800DFF3BA /* PAYCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardType.swift; sourceTree = "<group>"; };
+		62FCB556266CC6C800DFF3BA /* PAYHTTPMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYHTTPMethodType.swift; sourceTree = "<group>"; };
+		62FCB558266CC6C800DFF3BA /* PAYTransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionType.swift; sourceTree = "<group>"; };
+		62FCB559266CC6C800DFF3BA /* PAYCOFType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCOFType.swift; sourceTree = "<group>"; };
+		62FCB56D266CC6C900DFF3BA /* PAYParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYParserError.swift; sourceTree = "<group>"; };
+		62FCB56F266CC6C900DFF3BA /* PAYNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkError.swift; sourceTree = "<group>"; };
+		62FCB571266CC6C900DFF3BA /* PAYPaymentControllerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentControllerError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62FCB4AB266CC4ED00DFF3BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62C9512126FC7D5B002AC476 /* PAYCityField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512226FC7D5B002AC476 /* PAYCityField.swift */,
+			);
+			path = PAYCityField;
+			sourceTree = "<group>";
+		};
+		62C9512326FC7D5B002AC476 /* PAYCardHolderField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512426FC7D5B002AC476 /* PAYCardHolderField.swift */,
+			);
+			path = PAYCardHolderField;
+			sourceTree = "<group>";
+		};
+		62C9512526FC7D5B002AC476 /* PAYExpiredDateField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512626FC7D5B002AC476 /* PAYExpiredDateField.swift */,
+			);
+			path = PAYExpiredDateField;
+			sourceTree = "<group>";
+		};
+		62C9512726FC7D5C002AC476 /* PAYTextField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512826FC7D5C002AC476 /* PAYTextField.swift */,
+			);
+			path = PAYTextField;
+			sourceTree = "<group>";
+		};
+		62C9512926FC7D5C002AC476 /* PAYNameField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512A26FC7D5C002AC476 /* PAYNameField.swift */,
+			);
+			path = PAYNameField;
+			sourceTree = "<group>";
+		};
+		62C9512B26FC7D5C002AC476 /* PAYCardNumberField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512C26FC7D5C002AC476 /* PAYCardNumberField.swift */,
+			);
+			path = PAYCardNumberField;
+			sourceTree = "<group>";
+		};
+		62C9512D26FC7D5C002AC476 /* PAYEmailField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9512E26FC7D5C002AC476 /* PAYEmailField.swift */,
+			);
+			path = PAYEmailField;
+			sourceTree = "<group>";
+		};
+		62C9512F26FC7D5C002AC476 /* PAYZipField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513026FC7D5C002AC476 /* PAYZipField.swift */,
+			);
+			path = PAYZipField;
+			sourceTree = "<group>";
+		};
+		62C9513126FC7D5C002AC476 /* PAYAddressField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513226FC7D5C002AC476 /* PAYAddressField.swift */,
+			);
+			path = PAYAddressField;
+			sourceTree = "<group>";
+		};
+		62C9513326FC7D5C002AC476 /* PAYCountryField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513426FC7D5C002AC476 /* PAYCountryField.swift */,
+			);
+			path = PAYCountryField;
+			sourceTree = "<group>";
+		};
+		62C9513526FC7D5C002AC476 /* PAYCVVField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513626FC7D5C002AC476 /* PAYCVVField.swift */,
+			);
+			path = PAYCVVField;
+			sourceTree = "<group>";
+		};
+		62C9513726FC7D5C002AC476 /* PAYPhoneField */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513826FC7D5C002AC476 /* PAYPhoneField.swift */,
+			);
+			path = PAYPhoneField;
+			sourceTree = "<group>";
+		};
+		62FCB4A4266CC4ED00DFF3BA = {
+			isa = PBXGroup;
+			children = (
+				62FCB4B0266CC4ED00DFF3BA /* GenomePaymentSdk */,
+				62FCB4AF266CC4ED00DFF3BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62FCB4AF266CC4ED00DFF3BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4AE266CC4ED00DFF3BA /* GenomePaymentSdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62FCB4B0266CC4ED00DFF3BA /* GenomePaymentSdk */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB523266CC6C800DFF3BA /* Extensions */,
+				62FCB4CA266CC6C800DFF3BA /* Models */,
+				62FCB501266CC6C800DFF3BA /* Resources */,
+				62FCB4EC266CC6C800DFF3BA /* Services */,
+				62FCB536266CC6C800DFF3BA /* Types */,
+				62FCB4FC266CC6C800DFF3BA /* ViewControllers */,
+				62FCB4B1266CC4ED00DFF3BA /* Genome.h */,
+				62FCB4B2266CC4ED00DFF3BA /* Info.plist */,
+			);
+			path = GenomePaymentSdk;
+			sourceTree = "<group>";
+		};
+		62FCB4CA266CC6C800DFF3BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4CB266CC6C800DFF3BA /* Private Models */,
+				62FCB4DD266CC6C800DFF3BA /* Public Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62FCB4CB266CC6C800DFF3BA /* Private Models */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4CC266CC6C800DFF3BA /* PAYPaymentConfiguration */,
+				62FCB4CE266CC6C800DFF3BA /* PAYCustomer */,
+				62FCB4D0266CC6C800DFF3BA /* PAYMerchant */,
+				62FCB4D2266CC6C800DFF3BA /* PAYCardInfo */,
+				62FCB4D4266CC6C800DFF3BA /* PAYOrder */,
+				62FCB4D6266CC6C800DFF3BA /* PAYTransactionRequest */,
+				62FCB4D9266CC6C800DFF3BA /* PAYCard */,
+				62FCB4DB266CC6C800DFF3BA /* PAYCheckboxConfiguration */,
+			);
+			path = "Private Models";
+			sourceTree = "<group>";
+		};
+		62FCB4CC266CC6C800DFF3BA /* PAYPaymentConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4CD266CC6C800DFF3BA /* PAYPaymentConfiguration.swift */,
+			);
+			path = PAYPaymentConfiguration;
+			sourceTree = "<group>";
+		};
+		62FCB4CE266CC6C800DFF3BA /* PAYCustomer */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4CF266CC6C800DFF3BA /* PAYCustomer.swift */,
+			);
+			path = PAYCustomer;
+			sourceTree = "<group>";
+		};
+		62FCB4D0266CC6C800DFF3BA /* PAYMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4D1266CC6C800DFF3BA /* PAYMerchant.swift */,
+			);
+			path = PAYMerchant;
+			sourceTree = "<group>";
+		};
+		62FCB4D2266CC6C800DFF3BA /* PAYCardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4D3266CC6C800DFF3BA /* PAYCardInfo.swift */,
+			);
+			path = PAYCardInfo;
+			sourceTree = "<group>";
+		};
+		62FCB4D4266CC6C800DFF3BA /* PAYOrder */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4D5266CC6C800DFF3BA /* PAYOrder.swift */,
+			);
+			path = PAYOrder;
+			sourceTree = "<group>";
+		};
+		62FCB4D6266CC6C800DFF3BA /* PAYTransactionRequest */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4D7266CC6C800DFF3BA /* PAYAuth3DConfirm.swift */,
+				62FCB4D8266CC6C800DFF3BA /* PAYTransactionRequest.swift */,
+			);
+			path = PAYTransactionRequest;
+			sourceTree = "<group>";
+		};
+		62FCB4D9266CC6C800DFF3BA /* PAYCard */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4DA266CC6C800DFF3BA /* PAYCard.swift */,
+			);
+			path = PAYCard;
+			sourceTree = "<group>";
+		};
+		62FCB4DB266CC6C800DFF3BA /* PAYCheckboxConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4DC266CC6C800DFF3BA /* PAYCheckboxConfiguration.swift */,
+			);
+			path = PAYCheckboxConfiguration;
+			sourceTree = "<group>";
+		};
+		62FCB4DD266CC6C800DFF3BA /* Public Models */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4DE266CC6C800DFF3BA /* PAYPaymentInfo */,
+				62FCB4E0266CC6C800DFF3BA /* PAYInitInfo */,
+				62FCB4E2266CC6C800DFF3BA /* PAYCallback */,
+				62FCB4E4266CC6C800DFF3BA /* PAYSignatureInfo */,
+				62FCB4E6266CC6C800DFF3BA /* PAYTransactionResponse */,
+				62FCB4E8266CC6C800DFF3BA /* PAYTheme */,
+				62FCB4EA266CC6C800DFF3BA /* PAYFormFieldsConfiguration */,
+			);
+			path = "Public Models";
+			sourceTree = "<group>";
+		};
+		62FCB4DE266CC6C800DFF3BA /* PAYPaymentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4DF266CC6C800DFF3BA /* PAYPaymentInfo.swift */,
+			);
+			path = PAYPaymentInfo;
+			sourceTree = "<group>";
+		};
+		62FCB4E0266CC6C800DFF3BA /* PAYInitInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4E1266CC6C800DFF3BA /* PAYInitInfo.swift */,
+			);
+			path = PAYInitInfo;
+			sourceTree = "<group>";
+		};
+		62FCB4E2266CC6C800DFF3BA /* PAYCallback */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4E3266CC6C800DFF3BA /* PAYCallback.swift */,
+			);
+			path = PAYCallback;
+			sourceTree = "<group>";
+		};
+		62FCB4E4266CC6C800DFF3BA /* PAYSignatureInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4E5266CC6C800DFF3BA /* PAYSignatureInfo.swift */,
+			);
+			path = PAYSignatureInfo;
+			sourceTree = "<group>";
+		};
+		62FCB4E6266CC6C800DFF3BA /* PAYTransactionResponse */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4E7266CC6C800DFF3BA /* PAYTransactionResponse.swift */,
+			);
+			path = PAYTransactionResponse;
+			sourceTree = "<group>";
+		};
+		62FCB4E8266CC6C800DFF3BA /* PAYTheme */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4E9266CC6C800DFF3BA /* PAYTheme.swift */,
+			);
+			path = PAYTheme;
+			sourceTree = "<group>";
+		};
+		62FCB4EA266CC6C800DFF3BA /* PAYFormFieldsConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4EB266CC6C800DFF3BA /* PAYPAYAvailableFields.swift */,
+			);
+			path = PAYFormFieldsConfiguration;
+			sourceTree = "<group>";
+		};
+		62FCB4EC266CC6C800DFF3BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4ED266CC6C800DFF3BA /* PAYFieldStateObserver */,
+				62FCB4EF266CC6C800DFF3BA /* PAYKeyboardService */,
+				62FCB4F1266CC6C800DFF3BA /* PAYCardTypeDetector */,
+				62FCB4F3266CC6C800DFF3BA /* Network */,
+				62FCB4F6266CC6C800DFF3BA /* PAYL10nService */,
+				62FCB4F8266CC6C800DFF3BA /* PAYIPAddressProvider */,
+				62FCB4FA266CC6C800DFF3BA /* PAYBundleLocator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62FCB4ED266CC6C800DFF3BA /* PAYFieldStateObserver */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4EE266CC6C800DFF3BA /* PAYFieldStateObserver.swift */,
+			);
+			path = PAYFieldStateObserver;
+			sourceTree = "<group>";
+		};
+		62FCB4EF266CC6C800DFF3BA /* PAYKeyboardService */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4F0266CC6C800DFF3BA /* PAYKeyboardService.swift */,
+			);
+			path = PAYKeyboardService;
+			sourceTree = "<group>";
+		};
+		62FCB4F1266CC6C800DFF3BA /* PAYCardTypeDetector */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4F2266CC6C800DFF3BA /* PAYCardTypeDetector.swift */,
+			);
+			path = PAYCardTypeDetector;
+			sourceTree = "<group>";
+		};
+		62FCB4F3266CC6C800DFF3BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4F4266CC6C800DFF3BA /* PAYNetworkService.swift */,
+				62FCB4F5266CC6C800DFF3BA /* PAYNetworkAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		62FCB4F6266CC6C800DFF3BA /* PAYL10nService */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4F7266CC6C800DFF3BA /* PAYL10nService.swift */,
+			);
+			path = PAYL10nService;
+			sourceTree = "<group>";
+		};
+		62FCB4F8266CC6C800DFF3BA /* PAYIPAddressProvider */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4F9266CC6C800DFF3BA /* PAYIPAddressProvider.swift */,
+			);
+			path = PAYIPAddressProvider;
+			sourceTree = "<group>";
+		};
+		62FCB4FA266CC6C800DFF3BA /* PAYBundleLocator */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4FB266CC6C800DFF3BA /* PAYBundleLocator.swift */,
+			);
+			path = PAYBundleLocator;
+			sourceTree = "<group>";
+		};
+		62FCB4FC266CC6C800DFF3BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4FD266CC6C800DFF3BA /* PAYPaymentViewController */,
+				62FCB4FF266CC6C800DFF3BA /* PAYWebViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62FCB4FD266CC6C800DFF3BA /* PAYPaymentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB4FE266CC6C800DFF3BA /* PAYPaymentViewController.swift */,
+			);
+			path = PAYPaymentViewController;
+			sourceTree = "<group>";
+		};
+		62FCB4FF266CC6C800DFF3BA /* PAYWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB500266CC6C800DFF3BA /* PAYWebViewController.swift */,
+			);
+			path = PAYWebViewController;
+			sourceTree = "<group>";
+		};
+		62FCB501266CC6C800DFF3BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB502266CC6C800DFF3BA /* Images */,
+				62FCB511266CC6C800DFF3BA /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62FCB502266CC6C800DFF3BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB503266CC6C800DFF3BA /* CardLogos */,
+				62FCB50D266CC6C800DFF3BA /* UIElements */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		62FCB503266CC6C800DFF3BA /* CardLogos */ = {
+			isa = PBXGroup;
+			children = (
+				62CC075326FDEE95007760E9 /* dankort_card_icon.png */,
+				62CC075426FDEE95007760E9 /* jcb_card_icon.png */,
+				62FCB504266CC6C800DFF3BA /* noname_card_icon.png */,
+				62FCB505266CC6C800DFF3BA /* amex_card_icon.png */,
+				62FCB506266CC6C800DFF3BA /* diners_club_card_icon.png */,
+				62FCB507266CC6C800DFF3BA /* noname_card_icon@3x.png */,
+				62FCB508266CC6C800DFF3BA /* maestro_card_icon.png */,
+				62FCB509266CC6C800DFF3BA /* mastercard_card_icon.png */,
+				62FCB50A266CC6C800DFF3BA /* noname_card_icon@2x.png */,
+				62FCB50B266CC6C800DFF3BA /* discover_card_icon.png */,
+				62FCB50C266CC6C800DFF3BA /* visa_card_icon.png */,
+			);
+			path = CardLogos;
+			sourceTree = "<group>";
+		};
+		62FCB50D266CC6C800DFF3BA /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB50E266CC6C800DFF3BA /* white_checkmark_icon.png */,
+				62FCB50F266CC6C800DFF3BA /* white_checkmark_icon@2x.png */,
+				62FCB510266CC6C800DFF3BA /* white_checkmark_icon@3x.png */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		62FCB511266CC6C800DFF3BA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB512266CC6C800DFF3BA /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		62FCB523266CC6C800DFF3BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB524266CC6C800DFF3BA /* UIKit */,
+				62FCB52A266CC6C800DFF3BA /* Foundation */,
+				62FCB534266CC6C800DFF3BA /* Encodable */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		62FCB524266CC6C800DFF3BA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB525266CC6C800DFF3BA /* UIViewController+Extensions.swift */,
+				62FCB526266CC6C800DFF3BA /* UIView+Extensions.swift */,
+				62FCB527266CC6C800DFF3BA /* UIFont+Extensions.swift */,
+				62FCB528266CC6C800DFF3BA /* UIColor+Extensions.swift */,
+				62FCB529266CC6C800DFF3BA /* UIImage+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		62FCB52A266CC6C800DFF3BA /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB52B266CC6C800DFF3BA /* Array+Extensions.swift */,
+				62FCB52C266CC6C800DFF3BA /* Int+Extensions.swift */,
+				62FCB52D266CC6C800DFF3BA /* NumberFormatter+Extensions.swift */,
+				62FCB52E266CC6C800DFF3BA /* CharacterSet+Extensions.swift */,
+				62FCB52F266CC6C800DFF3BA /* String+Extension.swift */,
+				62FCB530266CC6C800DFF3BA /* Data+Extension.swift */,
+				62FCB531266CC6C800DFF3BA /* Dictionary+Extensions.swift */,
+				62FCB532266CC6C800DFF3BA /* DateFormatter.swift */,
+				62FCB533266CC6C800DFF3BA /* Float+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		62FCB534266CC6C800DFF3BA /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB535266CC6C800DFF3BA /* Encodable+Extensions.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		62FCB536266CC6C800DFF3BA /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB537266CC6C800DFF3BA /* UI Components */,
+				62FCB552266CC6C800DFF3BA /* Enums */,
+				62FCB55A266CC6C900DFF3BA /* Fields */,
+				62FCB56B266CC6C900DFF3BA /* Errors */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		62FCB537266CC6C800DFF3BA /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB538266CC6C800DFF3BA /* PAYCheckboxView */,
+				62FCB53B266CC6C800DFF3BA /* PAYDatePickerView */,
+				62FCB53E266CC6C800DFF3BA /* PAYLockView */,
+				62FCB540266CC6C800DFF3BA /* PAYCustomTextView */,
+				62FCB542266CC6C800DFF3BA /* PAYPaymentRootView */,
+				62FCB545266CC6C800DFF3BA /* PAYInputCardView */,
+				62FCB548266CC6C800DFF3BA /* PAYConditionsView */,
+				62FCB54B266CC6C800DFF3BA /* PAYNibLoadableView */,
+				62FCB54D266CC6C800DFF3BA /* PAYBaseView */,
+				62FCB54F266CC6C800DFF3BA /* PAYBillingView */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		62FCB538266CC6C800DFF3BA /* PAYCheckboxView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB539266CC6C800DFF3BA /* PAYCheckboxView.xib */,
+				62FCB53A266CC6C800DFF3BA /* PAYCheckboxView.swift */,
+			);
+			path = PAYCheckboxView;
+			sourceTree = "<group>";
+		};
+		62FCB53B266CC6C800DFF3BA /* PAYDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB53C266CC6C800DFF3BA /* PAYDatePickerView.swift */,
+				62FCB53D266CC6C800DFF3BA /* PAYDatePickerView.xib */,
+			);
+			path = PAYDatePickerView;
+			sourceTree = "<group>";
+		};
+		62FCB53E266CC6C800DFF3BA /* PAYLockView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB53F266CC6C800DFF3BA /* PAYLockView.swift */,
+			);
+			path = PAYLockView;
+			sourceTree = "<group>";
+		};
+		62FCB540266CC6C800DFF3BA /* PAYCustomTextView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB541266CC6C800DFF3BA /* PAYCustomTextView.swift */,
+			);
+			path = PAYCustomTextView;
+			sourceTree = "<group>";
+		};
+		62FCB542266CC6C800DFF3BA /* PAYPaymentRootView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB543266CC6C800DFF3BA /* PAYPaymentRootView.xib */,
+				62FCB544266CC6C800DFF3BA /* PAYPaymentRootView.swift */,
+			);
+			path = PAYPaymentRootView;
+			sourceTree = "<group>";
+		};
+		62FCB545266CC6C800DFF3BA /* PAYInputCardView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB546266CC6C800DFF3BA /* PAYInputCardView.swift */,
+				62FCB547266CC6C800DFF3BA /* PAYInputCardView.xib */,
+			);
+			path = PAYInputCardView;
+			sourceTree = "<group>";
+		};
+		62FCB548266CC6C800DFF3BA /* PAYConditionsView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB549266CC6C800DFF3BA /* PAYConditionsView.xib */,
+				62FCB54A266CC6C800DFF3BA /* PAYConditionsView.swift */,
+			);
+			path = PAYConditionsView;
+			sourceTree = "<group>";
+		};
+		62FCB54B266CC6C800DFF3BA /* PAYNibLoadableView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB54C266CC6C800DFF3BA /* PAYNibLoadableView.swift */,
+			);
+			path = PAYNibLoadableView;
+			sourceTree = "<group>";
+		};
+		62FCB54D266CC6C800DFF3BA /* PAYBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB54E266CC6C800DFF3BA /* PAYBaseView.swift */,
+			);
+			path = PAYBaseView;
+			sourceTree = "<group>";
+		};
+		62FCB54F266CC6C800DFF3BA /* PAYBillingView */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB550266CC6C800DFF3BA /* PAYBillingView.xib */,
+				62FCB551266CC6C800DFF3BA /* PAYBillingView.swift */,
+			);
+			path = PAYBillingView;
+			sourceTree = "<group>";
+		};
+		62FCB552266CC6C800DFF3BA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB553266CC6C800DFF3BA /* Private Enums */,
+				62FCB557266CC6C800DFF3BA /* Public Enums */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		62FCB553266CC6C800DFF3BA /* Private Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB554266CC6C800DFF3BA /* PAYL10nKey.swift */,
+				62FCB555266CC6C800DFF3BA /* PAYCardType.swift */,
+				62FCB556266CC6C800DFF3BA /* PAYHTTPMethodType.swift */,
+			);
+			path = "Private Enums";
+			sourceTree = "<group>";
+		};
+		62FCB557266CC6C800DFF3BA /* Public Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB558266CC6C800DFF3BA /* PAYTransactionType.swift */,
+				62FCB559266CC6C800DFF3BA /* PAYCOFType.swift */,
+			);
+			path = "Public Enums";
+			sourceTree = "<group>";
+		};
+		62FCB55A266CC6C900DFF3BA /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				62C9513126FC7D5C002AC476 /* PAYAddressField */,
+				62C9512326FC7D5B002AC476 /* PAYCardHolderField */,
+				62C9512B26FC7D5C002AC476 /* PAYCardNumberField */,
+				62C9512126FC7D5B002AC476 /* PAYCityField */,
+				62C9513326FC7D5C002AC476 /* PAYCountryField */,
+				62C9513526FC7D5C002AC476 /* PAYCVVField */,
+				62C9512D26FC7D5C002AC476 /* PAYEmailField */,
+				62C9512526FC7D5B002AC476 /* PAYExpiredDateField */,
+				62C9512926FC7D5C002AC476 /* PAYNameField */,
+				62C9513726FC7D5C002AC476 /* PAYPhoneField */,
+				62C9512726FC7D5C002AC476 /* PAYTextField */,
+				62C9512F26FC7D5C002AC476 /* PAYZipField */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		62FCB56B266CC6C900DFF3BA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB56C266CC6C900DFF3BA /* PAYParserError */,
+				62FCB56E266CC6C900DFF3BA /* PAYNetworkError */,
+				62FCB570266CC6C900DFF3BA /* PAYPaymentControllerError */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		62FCB56C266CC6C900DFF3BA /* PAYParserError */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB56D266CC6C900DFF3BA /* PAYParserError.swift */,
+			);
+			path = PAYParserError;
+			sourceTree = "<group>";
+		};
+		62FCB56E266CC6C900DFF3BA /* PAYNetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB56F266CC6C900DFF3BA /* PAYNetworkError.swift */,
+			);
+			path = PAYNetworkError;
+			sourceTree = "<group>";
+		};
+		62FCB570266CC6C900DFF3BA /* PAYPaymentControllerError */ = {
+			isa = PBXGroup;
+			children = (
+				62FCB571266CC6C900DFF3BA /* PAYPaymentControllerError.swift */,
+			);
+			path = PAYPaymentControllerError;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		62FCB4A9266CC4ED00DFF3BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FCB4BF266CC4ED00DFF3BA /* Genome.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		62FCB4AD266CC4ED00DFF3BA /* GenomePaymentSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62FCB4C2266CC4ED00DFF3BA /* Build configuration list for PBXNativeTarget "GenomePaymentSdk" */;
+			buildPhases = (
+				62FCB4A9266CC4ED00DFF3BA /* Headers */,
+				62FCB4AA266CC4ED00DFF3BA /* Sources */,
+				62FCB4AB266CC4ED00DFF3BA /* Frameworks */,
+				62FCB4AC266CC4ED00DFF3BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenomePaymentSdk;
+			productName = Genom;
+			productReference = 62FCB4AE266CC4ED00DFF3BA /* GenomePaymentSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62FCB4A5266CC4ED00DFF3BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					62FCB4AD266CC4ED00DFF3BA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 62FCB4A8266CC4ED00DFF3BA /* Build configuration list for PBXProject "GenomePaymentSdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				nb,
+				es,
+				da,
+				it,
+				sv,
+				"en-IE",
+				tr,
+				pl,
+				lt,
+				ru,
+				fr,
+				fi,
+				nl,
+				"pt-PT",
+			);
+			mainGroup = 62FCB4A4266CC4ED00DFF3BA;
+			productRefGroup = 62FCB4AF266CC4ED00DFF3BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62FCB4AD266CC4ED00DFF3BA /* GenomePaymentSdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62FCB4AC266CC4ED00DFF3BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CC075526FDEE95007760E9 /* dankort_card_icon.png in Resources */,
+				62FCB595266CC6C900DFF3BA /* white_checkmark_icon.png in Resources */,
+				62FCB592266CC6C900DFF3BA /* noname_card_icon@2x.png in Resources */,
+				62FCB593266CC6C900DFF3BA /* discover_card_icon.png in Resources */,
+				62FCB58F266CC6C900DFF3BA /* noname_card_icon@3x.png in Resources */,
+				62FCB5B6266CC6CA00DFF3BA /* PAYBillingView.xib in Resources */,
+				62CC075626FDEE95007760E9 /* jcb_card_icon.png in Resources */,
+				62FCB58E266CC6C900DFF3BA /* diners_club_card_icon.png in Resources */,
+				62FCB58C266CC6C900DFF3BA /* noname_card_icon.png in Resources */,
+				62FCB5AB266CC6C900DFF3BA /* PAYDatePickerView.xib in Resources */,
+				62FCB590266CC6C900DFF3BA /* maestro_card_icon.png in Resources */,
+				62FCB594266CC6C900DFF3BA /* visa_card_icon.png in Resources */,
+				62FCB591266CC6C900DFF3BA /* mastercard_card_icon.png in Resources */,
+				62FCB5B1266CC6C900DFF3BA /* PAYInputCardView.xib in Resources */,
+				62FCB5B2266CC6C900DFF3BA /* PAYConditionsView.xib in Resources */,
+				62FCB598266CC6C900DFF3BA /* Localizable.strings in Resources */,
+				62FCB5A8266CC6C900DFF3BA /* PAYCheckboxView.xib in Resources */,
+				62FCB58D266CC6C900DFF3BA /* amex_card_icon.png in Resources */,
+				62FCB597266CC6C900DFF3BA /* white_checkmark_icon@3x.png in Resources */,
+				62FCB5AE266CC6C900DFF3BA /* PAYPaymentRootView.xib in Resources */,
+				62FCB596266CC6C900DFF3BA /* white_checkmark_icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62FCB4AA266CC4ED00DFF3BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FCB5AD266CC6C900DFF3BA /* PAYCustomTextView.swift in Sources */,
+				62C9514226FC7D5C002AC476 /* PAYCountryField.swift in Sources */,
+				62FCB5B8266CC6CA00DFF3BA /* PAYL10nKey.swift in Sources */,
+				62FCB5B4266CC6C900DFF3BA /* PAYNibLoadableView.swift in Sources */,
+				62C9513C26FC7D5C002AC476 /* PAYTextField.swift in Sources */,
+				62FCB5B3266CC6C900DFF3BA /* PAYConditionsView.swift in Sources */,
+				62FCB584266CC6C900DFF3BA /* PAYCardTypeDetector.swift in Sources */,
+				62FCB5A7266CC6C900DFF3BA /* Encodable+Extensions.swift in Sources */,
+				62FCB5AC266CC6C900DFF3BA /* PAYLockView.swift in Sources */,
+				62FCB5B7266CC6CA00DFF3BA /* PAYBillingView.swift in Sources */,
+				62FCB5BB266CC6CA00DFF3BA /* PAYTransactionType.swift in Sources */,
+				62C9513E26FC7D5C002AC476 /* PAYCardNumberField.swift in Sources */,
+				62FCB59C266CC6C900DFF3BA /* UIColor+Extensions.swift in Sources */,
+				62FCB582266CC6C900DFF3BA /* PAYFieldStateObserver.swift in Sources */,
+				62FCB575266CC6C900DFF3BA /* PAYCardInfo.swift in Sources */,
+				62FCB574266CC6C900DFF3BA /* PAYMerchant.swift in Sources */,
+				62FCB581266CC6C900DFF3BA /* PAYPAYAvailableFields.swift in Sources */,
+				62C9513F26FC7D5C002AC476 /* PAYEmailField.swift in Sources */,
+				62FCB5B0266CC6C900DFF3BA /* PAYInputCardView.swift in Sources */,
+				62FCB5BC266CC6CA00DFF3BA /* PAYCOFType.swift in Sources */,
+				62FCB578266CC6C900DFF3BA /* PAYTransactionRequest.swift in Sources */,
+				62FCB5BA266CC6CA00DFF3BA /* PAYHTTPMethodType.swift in Sources */,
+				62FCB57D266CC6C900DFF3BA /* PAYCallback.swift in Sources */,
+				62FCB577266CC6C900DFF3BA /* PAYAuth3DConfirm.swift in Sources */,
+				62C9513926FC7D5C002AC476 /* PAYCityField.swift in Sources */,
+				62FCB579266CC6C900DFF3BA /* PAYCard.swift in Sources */,
+				62FCB5B5266CC6CA00DFF3BA /* PAYBaseView.swift in Sources */,
+				62FCB5A6266CC6C900DFF3BA /* Float+Extensions.swift in Sources */,
+				62C9513A26FC7D5C002AC476 /* PAYCardHolderField.swift in Sources */,
+				62FCB589266CC6C900DFF3BA /* PAYBundleLocator.swift in Sources */,
+				62FCB5C5266CC6CA00DFF3BA /* PAYParserError.swift in Sources */,
+				62FCB59E266CC6C900DFF3BA /* Array+Extensions.swift in Sources */,
+				62FCB58B266CC6C900DFF3BA /* PAYWebViewController.swift in Sources */,
+				62FCB5C7266CC6CA00DFF3BA /* PAYPaymentControllerError.swift in Sources */,
+				62FCB587266CC6C900DFF3BA /* PAYL10nService.swift in Sources */,
+				62FCB58A266CC6C900DFF3BA /* PAYPaymentViewController.swift in Sources */,
+				62FCB57B266CC6C900DFF3BA /* PAYPaymentInfo.swift in Sources */,
+				62C9514126FC7D5C002AC476 /* PAYAddressField.swift in Sources */,
+				62FCB59A266CC6C900DFF3BA /* UIView+Extensions.swift in Sources */,
+				62FCB573266CC6C900DFF3BA /* PAYCustomer.swift in Sources */,
+				62FCB5A0266CC6C900DFF3BA /* NumberFormatter+Extensions.swift in Sources */,
+				62FCB59F266CC6C900DFF3BA /* Int+Extensions.swift in Sources */,
+				62FCB5A9266CC6C900DFF3BA /* PAYCheckboxView.swift in Sources */,
+				62C9514326FC7D5C002AC476 /* PAYCVVField.swift in Sources */,
+				62FCB59B266CC6C900DFF3BA /* UIFont+Extensions.swift in Sources */,
+				62FCB57F266CC6C900DFF3BA /* PAYTransactionResponse.swift in Sources */,
+				62FCB583266CC6C900DFF3BA /* PAYKeyboardService.swift in Sources */,
+				62FCB576266CC6C900DFF3BA /* PAYOrder.swift in Sources */,
+				62FCB586266CC6C900DFF3BA /* PAYNetworkAPI.swift in Sources */,
+				62FCB57A266CC6C900DFF3BA /* PAYCheckboxConfiguration.swift in Sources */,
+				62FCB585266CC6C900DFF3BA /* PAYNetworkService.swift in Sources */,
+				62FCB5B9266CC6CA00DFF3BA /* PAYCardType.swift in Sources */,
+				62FCB5C6266CC6CA00DFF3BA /* PAYNetworkError.swift in Sources */,
+				62FCB5A4266CC6C900DFF3BA /* Dictionary+Extensions.swift in Sources */,
+				62FCB5AA266CC6C900DFF3BA /* PAYDatePickerView.swift in Sources */,
+				62FCB5A1266CC6C900DFF3BA /* CharacterSet+Extensions.swift in Sources */,
+				62FCB5A2266CC6C900DFF3BA /* String+Extension.swift in Sources */,
+				62FCB5A5266CC6C900DFF3BA /* DateFormatter.swift in Sources */,
+				62C9514026FC7D5C002AC476 /* PAYZipField.swift in Sources */,
+				62FCB59D266CC6C900DFF3BA /* UIImage+Extensions.swift in Sources */,
+				62FCB588266CC6C900DFF3BA /* PAYIPAddressProvider.swift in Sources */,
+				62FCB5A3266CC6C900DFF3BA /* Data+Extension.swift in Sources */,
+				62FCB599266CC6C900DFF3BA /* UIViewController+Extensions.swift in Sources */,
+				62FCB57C266CC6C900DFF3BA /* PAYInitInfo.swift in Sources */,
+				62FCB572266CC6C900DFF3BA /* PAYPaymentConfiguration.swift in Sources */,
+				62FCB580266CC6C900DFF3BA /* PAYTheme.swift in Sources */,
+				62C9513D26FC7D5C002AC476 /* PAYNameField.swift in Sources */,
+				62C9513B26FC7D5C002AC476 /* PAYExpiredDateField.swift in Sources */,
+				62C9514426FC7D5C002AC476 /* PAYPhoneField.swift in Sources */,
+				62FCB5AF266CC6C900DFF3BA /* PAYPaymentRootView.swift in Sources */,
+				62FCB57E266CC6C900DFF3BA /* PAYSignatureInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62FCB512266CC6C800DFF3BA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62FCB513266CC6C800DFF3BA /* de */,
+				62FCB514266CC6C800DFF3BA /* en */,
+				62FCB515266CC6C800DFF3BA /* nb */,
+				62FCB516266CC6C800DFF3BA /* es */,
+				62FCB517266CC6C800DFF3BA /* da */,
+				62FCB518266CC6C800DFF3BA /* it */,
+				62FCB519266CC6C800DFF3BA /* sv */,
+				62FCB51A266CC6C800DFF3BA /* en-IE */,
+				62FCB51B266CC6C800DFF3BA /* tr */,
+				62FCB51C266CC6C800DFF3BA /* pl */,
+				62FCB51D266CC6C800DFF3BA /* lt */,
+				62FCB51E266CC6C800DFF3BA /* ru */,
+				62FCB51F266CC6C800DFF3BA /* fr */,
+				62FCB520266CC6C800DFF3BA /* fi */,
+				62FCB521266CC6C800DFF3BA /* nl */,
+				62FCB522266CC6C800DFF3BA /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62FCB4C0266CC4ED00DFF3BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62FCB4C1266CC4ED00DFF3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62FCB4C3266CC4ED00DFF3BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GenomePaymentSdk/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.genome.sdk.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		62FCB4C4266CC4ED00DFF3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GenomePaymentSdk/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.genome.sdk.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62FCB4A8266CC4ED00DFF3BA /* Build configuration list for PBXProject "GenomePaymentSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FCB4C0266CC4ED00DFF3BA /* Debug */,
+				62FCB4C1266CC4ED00DFF3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62FCB4C2266CC4ED00DFF3BA /* Build configuration list for PBXNativeTarget "GenomePaymentSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FCB4C3266CC4ED00DFF3BA /* Debug */,
+				62FCB4C4266CC4ED00DFF3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62FCB4A5266CC4ED00DFF3BA /* Project object */;
+}
