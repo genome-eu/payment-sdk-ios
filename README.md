@@ -18,26 +18,26 @@ iOS 13 or above
 
 ## Installation
 
-### 1. If you haven’t already, install the latest version of **CocoaPods**.
+1. If you haven’t already, install the latest version of ***CocoaPods***.
 
-### 2. If you don’t have an existing **Podfile**, run the following command to create one:
+2. If you don’t have an existing ***Podfile***, run the following command to create one:
 ```
 pod init
 ```
 
-### 3. Add this line to your **Podfile**:
+3. Add this line to your ***Podfile***
 ```
 pod 'GenomePaymentSdk'
 ```
 
-### 4. Run the following command:
+4. Run the following command:
 ```
 pod install
 ```
 
-### 5. Don’t forget to use the **.xcworkspace** file to open your project in Xcode.
+5. Don’t forget to use the ***.xcworkspace*** file to open your project in Xcode.
 
-### 6. In the future, to update to the latest version of the SDK, run:
+6. In the future, to update to the latest version of the SDK, run:
 ```
 pod update GenomePaymentSdk
 ```
