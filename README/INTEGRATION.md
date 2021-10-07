@@ -19,7 +19,7 @@ First of all register on site [Genome](https://genome.eu) and get merchant login
 
 In your application create all necessary forms and request to collect all data about merchant, customer and order.
 On the basis of the information obtained create **PAYInitInfo**, **PAYPaymentInfo**.
-  
+
 ### 2.1 Set up an PAYTheme
 
 **PAYTheme** objects can be used to visually style Genome-provided UI. See [Customize the UI](#markdown-header-9-customize-the-ui) for more information.
@@ -89,7 +89,7 @@ Additional sutype for **PAYPaymentInfo**:
 | sale3d |
 
 ### 2.4 Prepare signature calculation
-Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://genome.eu/docs/#hpp-signature-calculation). To create signature you need to use private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **PAYSignatureInfo** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter. 
+Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://genome.eu/docs/#hpp-signature-calculation). To create signature you need to use private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **PAYSignatureInfo** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter.
 
 Signature calculation block:
 **(PAYSignatureInfo, @escaping (String) ->()) -> ()**
@@ -162,8 +162,8 @@ Signature completion block:
 Initialize this class with **PAYInitInfo**, **PAYPaymentInfo** objects and **PAYCallback**.
 
 	init(
-		initInfo: PAYInitInfo, 
-		paymentInfo: PAYPaymentInfo, 
+		initInfo: PAYInitInfo,
+		paymentInfo: PAYPaymentInfo,
 		callbacks: PAYCallback
 	)
 
@@ -172,7 +172,7 @@ Also on this screen customer can change name, address, date of birth or email (i
 ## 4 Completion the payment
 
 After the payment has been processed it will be called completion handler. This handler takes **Result<PAYTransactionResponse, Error>** as input parameter. Usually if you have some technical problem (bad network connection for example) you can received standard Error. You can use code and description from Error to handle this situation and warn user about problem.
-If you have no problem with connection and hardware than you will received response **PAYTransactionResponse** from Genome server. 
+If you have no problem with connection and hardware than you will received response **PAYTransactionResponse** from Genome server.
 There are two main cases, payment was successfully accepted or rejected by some reason. If payment accepted you will received unique number in 'reference' field.
 
 Server success response example:
@@ -209,10 +209,10 @@ Server failure response example:
 
 
 
- 
-In the end of the payment process there are multiple ways to communication with user. You can store reference number in local or remote database, save in user history, create receipt and send to user email etc. You can redirect user on main screen to continue shopping or to profile screen with history of orders. 
+
+In the end of the payment process there are multiple ways to communication with user. You can store reference number in local or remote database, save in user history, create receipt and send to user email etc. You can redirect user on main screen to continue shopping or to profile screen with history of orders.
 In case you have received an error message there are also multiple options. You can try to describe problem to user using 'message' field, stay on payment screen and offer to user try to use another credit card or check and edit personal information. Or you can redirect him on technical support page.
-In demo application we just show standard Alert with message from server and stay on payment screen. 
+In demo application we just show standard Alert with message from server and stay on payment screen.
 
 Received response **PAYTransactionResponse** contain all information to finish payment flow. Because completion closure creates on user side, in comletion body you will also have access to presenting controller or navigation controller, all variable and all services.
 
@@ -226,7 +226,7 @@ Received response **PAYTransactionResponse** contain all information to finish p
 
 ## 6 Customize the UI
 
-The appearance of the UI components is customizable by using the **PAYTheme** object. 
+The appearance of the UI components is customizable by using the **PAYTheme** object.
 
 ![Payment view controller](themes.png)
 
@@ -259,7 +259,7 @@ The appearance of the UI components is customizable by using the **PAYTheme** ob
 | buttonTitleFont               | UIFont  | Pay button title font                                                 |
 | buttonCornerRadius            | CGFloat | Pay button corner radius                                              |
 
-**Warning**: some of the checkmark colors takes from another properties 
+**Warning**: some of the checkmark colors takes from another properties
 
 checkbox selected color = enabledButtonBackgroundColor
 

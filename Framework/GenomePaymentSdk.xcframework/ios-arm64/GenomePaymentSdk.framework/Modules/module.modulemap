@@ -1,4 +1,0 @@
-framework module GenomePaymentSdk {
-  header "GenomePaymentSdk-Swift.h"
-  requires objc
-}
