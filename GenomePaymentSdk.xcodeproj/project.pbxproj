@@ -100,6 +100,7 @@
 		62FCB5C5266CC6CA00DFF3BA /* PAYParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB56D266CC6C900DFF3BA /* PAYParserError.swift */; };
 		62FCB5C6266CC6CA00DFF3BA /* PAYNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB56F266CC6C900DFF3BA /* PAYNetworkError.swift */; };
 		62FCB5C7266CC6CA00DFF3BA /* PAYPaymentControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB571266CC6C900DFF3BA /* PAYPaymentControllerError.swift */; };
+		E7DBF60027103B7A0023497E /* PAYMerchantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DBF5FF27103B7A0023497E /* PAYMerchantInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -213,6 +214,7 @@
 		62FCB56D266CC6C900DFF3BA /* PAYParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYParserError.swift; sourceTree = "<group>"; };
 		62FCB56F266CC6C900DFF3BA /* PAYNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkError.swift; sourceTree = "<group>"; };
 		62FCB571266CC6C900DFF3BA /* PAYPaymentControllerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentControllerError.swift; sourceTree = "<group>"; };
+		E7DBF5FF27103B7A0023497E /* PAYMerchantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYMerchantInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +447,7 @@
 		62FCB4DD266CC6C800DFF3BA /* Public Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7DBF5FE271039510023497E /* PAYMerchantInfo */,
 				62FCB4DE266CC6C800DFF3BA /* PAYPaymentInfo */,
 				62FCB4E0266CC6C800DFF3BA /* PAYInitInfo */,
 				62FCB4E2266CC6C800DFF3BA /* PAYCallback */,
@@ -903,6 +906,14 @@
 			path = PAYPaymentControllerError;
 			sourceTree = "<group>";
 		};
+		E7DBF5FE271039510023497E /* PAYMerchantInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E7DBF5FF27103B7A0023497E /* PAYMerchantInfo.swift */,
+			);
+			path = PAYMerchantInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1034,6 +1045,7 @@
 				62FCB582266CC6C900DFF3BA /* PAYFieldStateObserver.swift in Sources */,
 				62FCB575266CC6C900DFF3BA /* PAYCardInfo.swift in Sources */,
 				62FCB574266CC6C900DFF3BA /* PAYMerchant.swift in Sources */,
+				E7DBF60027103B7A0023497E /* PAYMerchantInfo.swift in Sources */,
 				62FCB581266CC6C900DFF3BA /* PAYPAYAvailableFields.swift in Sources */,
 				62C9513F26FC7D5C002AC476 /* PAYEmailField.swift in Sources */,
 				62FCB5B0266CC6C900DFF3BA /* PAYInputCardView.swift in Sources */,
