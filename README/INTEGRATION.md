@@ -89,41 +89,12 @@ Additional sutype for **PAYPaymentInfo**:
 | sale3d |
 
 ### 2.4 Prepare signature calculation
-Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://genome.eu/docs/#hpp-signature-calculation). To create signature you need to use private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **PAYSignatureInfo** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter.
+Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://maxpay.com/docs/#maxpay-js). To create signature you need to user private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **dataForSignature** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter.
 
 Signature calculation block:
-**(PAYSignatureInfo, @escaping (String) ->()) -> ()**
+**@escaping (_ dataForSignature: String, _ signatureCallback: @escaping (_ signature: String) -> ()) -> ())**
 
-**PAYSignatureInfo** provide information to create signature, actually it contains some fields from **PAYInitInfo** and **PAYPaymentInfo**.
-
-
-	init(
-		initInfo: PAYInitInfo,
-		paymentInfo: PAYPaymentInfo
-	)
-
-| Property            | Type    | Description                              | Note     |
-|---------------------|---------|------------------------------------------|----------|
-| apiVersion          | Int     | Genome API version                       | required |
-| authType            | String  | Type of authorization (only one type)    | required |
-| transactionUniqueID | String  | Unique transaction Id                    | required |
-| transactionType     | String  | Type of the transaction                  | required |
-| amount              | String  | Amount of the transaction                | required |
-| currency            | String  | Currency in ISO 4217                     | required |
-| firstName           | String  | The first name of the customer           | required |
-| lastName            | String  | The last name of the customer            | required |
-| address             | String  | Customer's address                       | optional |
-| city                | String  | Customer's city                          | optional |
-| state               | String  | Customer's state                         | optional |
-| zip                 | String  | Customer's zip code                      | optional |
-| country             | String  | Customer's country, ISO 3166-1, alpha-3  | required |
-| phone               | String  | Customer's phone number                  | optional |
-| email               | String  | Customer's email address                 | required |
-| ip                  | String  | Customer's IP address.                   | required |
-| callbackURL         | String  | Callback for SALE3D transaction type.    | optional |
-| redirectURL         | String  | Redirection for SALE3D transaction type  | optional |
-| birthday            | String  | Date of birth of the customer            | optional |
-
+**dataForSignature** contains information to create signature, actually it contains some fields from **PAYInitInfo** and **PAYPaymentInfo**.
 
 ### 2.5 Prepare payment procedure result handling
 
@@ -153,7 +124,7 @@ Signature completion block:
 
 | Property             | Type                                              | Description                  | Note     |
 |----------------------|---------------------------------------------------|------------------------------|----------|
-| signagureCalculation | (PAYSignatureInfo, (String) -> Void) -> Void      | Signature calculation block  | required |
+| signagureCalculation | (String, (String) -> Void) -> Void      | Signature calculation block  | required |
 | completion           | (Result<PAYTransactionResponse, Error>) -> Void   | Payment completion block     | required |
 
 ## 3 Set up an PAYPaymentViewController
@@ -242,7 +213,7 @@ The appearance of the UI components is customizable by using the **PAYTheme** ob
 | headerStandardTitleFont       | UIFont  | Header standard font (only for Amount header)                         |
 | headerLargeTitleFont          | UIFont  | Header large font (only for Billing Address header)                   |
 | fieldBackgroundColor          | UIColor | Input field background color                                          |
-| fieldTitleColor               | UIColor | Intput field title text color                                         |
+| fieldTitleColor               | UIColor | Input field title text color                                         |
 | fieldTextColor                | UIColor | Input field text color                                                |
 | fieldPlaceholderColor         | UIColor | Input field placeholder color                                         |
 | fieldTitleFont                | UIFont  | Input field title font                                                |

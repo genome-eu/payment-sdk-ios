@@ -34,7 +34,6 @@
 		62FCB57B266CC6C900DFF3BA /* PAYPaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4DF266CC6C800DFF3BA /* PAYPaymentInfo.swift */; };
 		62FCB57C266CC6C900DFF3BA /* PAYInitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E1266CC6C800DFF3BA /* PAYInitInfo.swift */; };
 		62FCB57D266CC6C900DFF3BA /* PAYCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E3266CC6C800DFF3BA /* PAYCallback.swift */; };
-		62FCB57E266CC6C900DFF3BA /* PAYSignatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E5266CC6C800DFF3BA /* PAYSignatureInfo.swift */; };
 		62FCB57F266CC6C900DFF3BA /* PAYTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E7266CC6C800DFF3BA /* PAYTransactionResponse.swift */; };
 		62FCB580266CC6C900DFF3BA /* PAYTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4E9266CC6C800DFF3BA /* PAYTheme.swift */; };
 		62FCB581266CC6C900DFF3BA /* PAYPAYAvailableFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB4EB266CC6C800DFF3BA /* PAYPAYAvailableFields.swift */; };
@@ -1100,7 +1099,6 @@
 				62C9513B26FC7D5C002AC476 /* PAYExpiredDateField.swift in Sources */,
 				62C9514426FC7D5C002AC476 /* PAYPhoneField.swift in Sources */,
 				62FCB5AF266CC6C900DFF3BA /* PAYPaymentRootView.swift in Sources */,
-				62FCB57E266CC6C900DFF3BA /* PAYSignatureInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
